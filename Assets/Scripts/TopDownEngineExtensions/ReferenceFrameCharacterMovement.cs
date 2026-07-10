@@ -12,6 +12,15 @@ public class ReferenceFrameCharacterMovement : CharacterMovement
     /// Control Style
     public Camera MovementReferenceFrame = null;
 
+    protected override void Initialization()
+    {
+        base.Initialization(); // 이 줄이 핵심입니다 - 원래 초기화 로직을 반드시 먼저 실행
+
+        if (MovementReferenceFrame == null)
+        {
+            MovementReferenceFrame = Camera.main;
+        }
+    }
 
     /// <summary>
     /// Moves the controller

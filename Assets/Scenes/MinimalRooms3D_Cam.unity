@@ -395,6 +395,12 @@ Transform:
   - {fileID: 1745000629}
   m_Father: {fileID: 1732279646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &88926565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167761570092420, guid: 2513a92f10a3a1746bfe8e1034ae9f1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1759254530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &92250223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4478,6 +4484,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50885c5dbd70b24f88173799279da57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!20 &866244955 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1117384771960154654, guid: 9edcf7e494cf3e640b18cb7495fb179a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1967243807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890708198
 GameObject:
   m_ObjectHideFlags: 0
@@ -8652,10 +8664,15 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114524877107183236, guid: 2513a92f10a3a1746bfe8e1034ae9f1a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1167761570092420, guid: 2513a92f10a3a1746bfe8e1034ae9f1a,
+        type: 3}
+      insertIndex: 6
+      addedObject: {fileID: 1759254548}
   m_SourcePrefab: {fileID: 100100000, guid: 2513a92f10a3a1746bfe8e1034ae9f1a, type: 3}
 --- !u!114 &1759254531 stripped
 MonoBehaviour:
@@ -8663,12 +8680,48 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1759254530}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 88926565}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fe81ad80cb743b408fa90b048ad597f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1759254548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88926565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcaa1ca2104952f4f9afe9d5bf9cd1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ReferenceFrameCharacterMovement
+  AbilityStartSfx: {fileID: 0}
+  AbilityInProgressSfx: {fileID: 0}
+  AbilityStopSfx: {fileID: 0}
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  Movement: 0
+  InputAuthorized: 1
+  AnalogInput: 0
+  ScriptDrivenInput: 0
+  WalkSpeed: 4
+  ShouldSetMovement: 1
+  IdleThreshold: 0.05
+  Acceleration: 10
+  Deceleration: 100
+  InterpolateMovementSpeed: 0
+  WalkParticles:
+  - {fileID: 0}
+  TouchTheGroundParticles: []
+  TouchTheGroundSfx: []
+  MovementReferenceFrame: {fileID: 866244955}
 --- !u!1 &1771793321
 GameObject:
   m_ObjectHideFlags: 0
@@ -9677,6 +9730,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.57850474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137535785635986062, guid: 9edcf7e494cf3e640b18cb7495fb179a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137535785635986062, guid: 9edcf7e494cf3e640b18cb7495fb179a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2951571811064220447, guid: 9edcf7e494cf3e640b18cb7495fb179a,
         type: 3}
